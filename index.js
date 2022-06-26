@@ -29,7 +29,7 @@ const WakeUpDynos = async () => {
   const date = new Date();
 
   try {
-    urls.map((url) => {
+    urls.forEach((url) => {
       WakeUpDyno(url);
     });
   } catch {
