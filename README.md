@@ -23,7 +23,7 @@ by: [stay](https://stayy.xyz/)
 - ADD or DELETE URL values
 - Change URL values to the dynos URL
 - Go to `index.js`
-- COMMENT Wake Up single Dyno section
+- COMMENT or DELETE Wake Up single Dyno section
 - UNCOMMENT Wake Up Multiple Dynos section
 - Then follow the steps down below
 
@@ -34,7 +34,7 @@ by: [stay](https://stayy.xyz/)
 - Rename `env.example` to `.env`
 - Change URL values to the dynos URL
 - Then run `yarn install` command or if yarn is not installed simply run `npm install`
-- The start the aplication with `yarn start`command or if yarn is not installed run `npm run start`
+- Then start the aplication with `yarn start`command or if yarn is not installed run `npm run start`
 - And you are done, the script will send `GET` requests to the URL(s)
 
 #### Heroku
@@ -47,5 +47,5 @@ by: [stay](https://stayy.xyz/)
 > set KEY to URL
 > set VALUE to your URL like: https://github.com
 
-- Then go to Resources turn off `web` dyno and tourn on `Worker`
+- Then go to Resources turn off `web` dyno and turn on `Worker`
 - And you are done, the script will send `GET` requests to the URL(s)
