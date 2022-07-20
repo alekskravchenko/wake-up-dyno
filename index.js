@@ -7,7 +7,7 @@ const WakeUpDynos = async () => {
     if (!entry[0].startsWith('URL')) return;
 
     try {
-      await axios.get(url);
+      await axios.get(entry[1]);
       console.log(`Dyno(${entry[1]}) has been successfully woken up, at ${new Date()}`);
     } catch {
       console.error(`Waking Up Dyno(${entry[1]}) failed, at ${new Date()}`);
