@@ -1,16 +1,16 @@
 {
-	"name": "wakeupdyno",
-	"version": "0.0.1",
-	"description": "Prevent Heroku dynos easily from going to sleep.",
-	"main": "index.js",
-	"scripts": {
-		"start": "node index.js"
-	},
-	"keywords": [],
-	"author": "stay",
-	"license": "MIT",
-	"dependencies": {
-		"axios": "^0.27.2",
-		"dotenv": "^16.0.1"
-	}
+  "name": "wakeupdyno",
+  "version": "0.0.1",
+  "description": "Prevent Heroku dynos easily from going to sleep.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "stay",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1"
+  }
 }
