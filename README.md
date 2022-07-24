@@ -2,7 +2,7 @@
 
 Prevent Heroku dynos easily from going to sleep.
 <br />
-by: [stay](https://stayy.xyz/)
+by: [stay](https://znagy.hu/)
 
 ## Setup
 
