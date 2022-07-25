@@ -2,8 +2,8 @@ const axios = require('axios');
 const dotenv = require('dotenv');
 dotenv.config();
 
-const WakeUpDynos = async () => {
-  Object.entries(process.env).forEach((entry) => {
+const WakeUpDynos = () => {
+  Object.entries(process.env).forEach(async (entry) => {
     if (!entry[0].startsWith('URL')) return;
 
     try {
