@@ -1,12 +1,10 @@
-## Wake Up Heroku Dynos
+# Wake Up Heroku Dynos
 
 Prevent Heroku dynos easily from going to sleep.
-<br />
-by: [stay](https://znagy.hu/)
 
 ## Setup
 
-#### Localhost
+### Localhost
 
 - Rename `env.example` to `.env`
 - Change URL values to the dynos URL, you can add or remove URL(s), because the script loops over all the entries starting with `URL`
@@ -14,7 +12,7 @@ by: [stay](https://znagy.hu/)
 - Then start the aplication with `yarn start`command or if yarn is not installed run `npm run start`
 - And you are done, the script will send `GET` requests to each URL every two minutes.
 
-#### Heroku
+### Heroku
 
 - Create a new Heroku app using your repository
 - Deploy the app
