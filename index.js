@@ -1,16 +1,18 @@
-const axios = require('axios');
 const dotenv = require('dotenv');
 dotenv.config();
 
 const WakeUpDynos = () => {
   Object.entries(process.env).forEach(async ([key, value]) => {
     if (!key.startsWith('URL')) return;
+    if (!value) return;
 
     try {
-      await axios.get(value);
-      console.log(`Dyno(${value}) has been successfully woken up, at ${new Date()}`);
+      const res = await fetch(value);
+      if (!res.ok) throw res;
+
+      console.log(`${value} has been successfully woken up, at ${new Date()}`);
     } catch {
-      console.error(`Waking Up Dyno(${value}) failed, at ${new Date()}`);
+      console.error(`Waking Up ${value} failed, at ${new Date()}`);
     }
   });
 };
