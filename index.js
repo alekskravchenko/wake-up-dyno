@@ -17,4 +17,4 @@ const WakeUpDynos = () => {
   });
 };
 
-setInterval(WakeUpDynos, 15 * 60 * 1000);
+setInterval(WakeUpDynos, 9 * 60 * 1000);
